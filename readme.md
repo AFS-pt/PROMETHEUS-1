@@ -29,6 +29,6 @@ If all milestones are successfully accomplished, PROMETHEUS will be the first Po
 
 ## Acknowledgment
 
-The project "PROMETHEUS - PocketQube Framework Designed for Research and Educational Access to Space" (ref. CMU/TIC/0017/2021) is supported by [Portuguese Foundation for Science and Technology](https://www.fct.pt/index.phtml.en) under the International Partnership [CMU Portugal Program](https://www.cmuportugal.org), in a consortium between [University of Minho](https://www.uminho.pt/EN/Pages/default.aspx) (PT), [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/) (PT) and [Carnegie Mellon University](https://www.cmu.edu) (USA).
+The project "PROMETHEUS - PocketQube Framework Designed for Research and Educational Access to Space" (ref. CMU/TIC/0017/2021) is supported by [Portuguese Foundation for Science and Technology](https://www.fct.pt/index.phtml.en) under the International Partnership [CMU Portugal Program](https://www.cmuportugal.org), in a consortium between [Universidade do Minho](https://www.uminho.pt/EN/Pages/default.aspx) (PT), [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/) (PT) and [Carnegie Mellon University](https://www.cmu.edu) (USA).
 
 ![My Image](images/Logo_full.png)
