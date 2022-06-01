@@ -22,7 +22,7 @@ Check regurlaly the International [Frequency Information Circular](https://www.i
   
   and be in aggreement with
   
-  > the [National table of frequency allocations (NTFA)](https://www.anacom.pt/render.jsp?categoryId=82710&languageId=1) and, in particular, the document “Use of frequencies by amateur and amateur satellite services”, published under the terms of paragraph 1 of article 15 of the Decree-Law 53/2009, of 2 March, which establishes the frequency bands allocated to the amateur service and the satellite amateur service, as well as the conditions of use for each of the amateur categories, including the respective power of broadcast, **stipulates that only the band 435-438 MHz is allocated to the amateur satellite service, with secondary status**.
+  > the [National table of frequency allocations (NTFA)](https://www.anacom.pt/render.jsp?categoryId=82710&languageId=1) and, in particular, the document “[Use of frequencies by amateur and amateur satellite services](https://github.com/AFS-pt/PROMETHEUS-1/blob/0ab605399afbf803f6bf17d2daa207f28c41104f/1.License/ITU/support_files/SAAS_setembro_2013.pdf)”, published under the terms of paragraph 1 of article 15 of the [Decree-Law 53/2009, of 2 March](https://github.com/AFS-pt/PROMETHEUS-1/blob/0ab605399afbf803f6bf17d2daa207f28c41104f/1.License/ITU/support_files/Decreto-Lei%20n53_20090302.pdf), which establishes the frequency bands allocated to the amateur service and the satellite amateur service, as well as the conditions of use for each of the amateur categories, including the respective power of broadcast, **stipulates that only the band 435-438 MHz is allocated to the amateur satellite service, with secondary status**.
 
 - files compiled with no errors or warnings
 
