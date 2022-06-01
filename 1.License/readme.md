@@ -19,12 +19,14 @@ Check regurlaly the International [Frequency Information Circular](https://www.i
 - satellite initial frequency adjusted to meet the Circular Letter CR/303 from ITU, regarding the footnote:
   
   > **5.282**    In the bands 435-438 MHz, 1 260-1 270 MHz, 2 400-2 450 MHz, 3 400-3 410 MHz (in Regions 2 and 3 only) and 5 650-5 670 MHz, the amateur-satellite service may operate subject to not causing harmful interference to other services operating in accordance with the Table (see No. 5.43). Administrations authorizing such use shall ensure that any harmful interference caused by emissions from a station in the amateur-satellite service is immediately eliminated in accordance with the provisions of No. 25.11. The use of the bands 1 260-1 270 MHz and 5 650-5 670 MHz by the amateur-satellite service is limited to the Earth-to-space direction.
+  
+  and be in aggreement with
+  
+  > the [National table of frequency allocations (NTFA)](https://www.anacom.pt/render.jsp?categoryId=82710&languageId=1) and, in particular, the document “Use of frequencies by amateur and amateur satellite services”, published under the terms of paragraph 1 of article 15 of the Decree-Law 53/2009, of 2 March, which establishes the frequency bands allocated to the amateur service and the satellite amateur service, as well as the conditions of use for each of the amateur categories, including the respective power of broadcast, **stipulates that only the band 435-438 MHz is allocated to the amateur satellite service, with secondary status**.
 
 - files compiled with no errors or warnings
 
 ---
-
-
 
 # IARU
 
@@ -42,8 +44,6 @@ n/a
 
 ---
 
-
-
 # FOSSA.SYSTEMS
 
 ## Status
@@ -51,8 +51,6 @@ n/a
 Service aggreement in progress
 
 ## Next Steps
-
-
 
 ## Changelog
 
