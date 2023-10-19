@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "cameraboard")(type "KiCad")(uri "${KIPRJMOD}/kicad-libs/cameraboard.pretty")(options "")(descr ""))
+  (lib (name "mainboard")(type "KiCad")(uri "${KIPRJMOD}/kicad-libs/mainboard.pretty")(options "")(descr ""))
+)

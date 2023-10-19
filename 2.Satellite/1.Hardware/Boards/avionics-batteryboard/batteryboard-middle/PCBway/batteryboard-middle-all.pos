@@ -1,0 +1,17 @@
+### Footprint positions - created on 2023 April 29, Saturday 22:30:04 ###
+### Printed by KiCad version 7.0.2-0
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                   Package                        PosX       PosY       Rot  Side
+J1        FLE-107-01-X-DV-A     SAMTEC_FLE-107-01-X-DV-A    84.1780   -55.9151  -90.0000  bottom
+J4        Battery_Pads          Battery_Pads               103.2000   -85.4000  180.0000  bottom
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm       119.1000   -45.6000  180.0000  bottom
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm       119.1000   -85.4000  180.0000  bottom
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm        87.3000   -45.6000  180.0000  bottom
+J2        FTS-107-01-X-DV-A     SAMTEC-FTS-107-01-X-DV-A    84.1780   -55.9151  -90.0000  top
+J3        Battery_Pads          Battery_Pads               103.2000   -85.4000  180.0000  top
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm       119.1000   -45.6000    0.0000  top
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm       119.1000   -85.4000    0.0000  top
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm        87.3000   -45.6000    0.0000  top
+Ref**     Val**                 pycubed_mini_half          103.9000   -45.0000    0.0000  top
+## End

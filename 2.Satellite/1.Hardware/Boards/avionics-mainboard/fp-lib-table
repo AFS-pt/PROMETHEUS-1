@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "mainboard")(type "KiCad")(uri "${KIPRJMOD}/kicad-libs/mainboard.pretty")(options "")(descr ""))
+  (lib (name "solarpanels")(type "KiCad")(uri "${KIPRJMOD}/kicad-libs/solarpanels.pretty")(options "")(descr ""))
+)

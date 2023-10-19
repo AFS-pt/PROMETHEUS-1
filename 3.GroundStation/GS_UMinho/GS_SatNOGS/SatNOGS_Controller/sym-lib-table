@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "satnogs_controller-rescue")(type "Legacy")(uri "${KIPRJMOD}/satnogs_controller-rescue.lib")(options "")(descr ""))
+)

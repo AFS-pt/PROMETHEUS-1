@@ -1,0 +1,2 @@
+Adafruit CircuitPython 7.3.3-5-g5f835280f-dirty on 2022-12-29; PyCubedMini with samd51j19
+Board ID:pycubedmini

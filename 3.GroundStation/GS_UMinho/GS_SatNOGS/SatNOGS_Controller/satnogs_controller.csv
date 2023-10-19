@@ -1,0 +1,41 @@
+Reference, Quantity, Value, Footprint, Datasheet, Mnf., Price
+A1 A2 ,2,Pololu_Breakout_A4988,Module:Pololu_Breakout-16_15.2x20.3mm,https://www.pololu.com/product/2980/pictures,-,-
+C1 C11 C13 C2 C6 C7 ,6,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,08053C104KAT2A,0.094
+C10 ,1,10p,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,C0805C100K5GACTU,0.091
+C12 ,1,47u,Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder,,GRM32ER61C476ME15L,0.851
+C14 C15 C3 ,3,100u,Capacitor_SMD:CP_Elec_6.3x5.3,,EXV107M016A9GAA,0.443
+C4 ,1,100u,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,,RGA101M1JBK-1012G,0.248
+C5 ,1,2.2u,Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder,,C3225X7R2A225K230AB,0.697
+C8 ,1,7.5n,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,GRM2195C1H752JA01D,0.244
+C9 ,1,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,08053C104KAT2A,0.094
+D1 ,1,D_TVS,Diode_SMD:D_SMC_Handsoldering,,SMCJ48CA-TR,0.442
+D2 D4 ,2,D_Schottky,Diode_SMD:D_SMC_Handsoldering,,CDBC560-G,0.67
+D3 ,1,D_TVS_x2_AAC,Package_TO_SOT_SMD:SOT-23_Handsoldering,,CDSOT23-SM712,1.53
+F1 ,1,FUSE,Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder,,Littelfuse 1206SFS200F/63-2,0.6
+FB1 ,1,FILTER - POWER,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,BLM21PG221SN1D,0.104
+FB2 ,1,FILTER,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,BLM21AG221SN1D,0.141
+JP1 JP2 JP3 JP4 JP5 JP6 JP7 JP8 ,8,Jumper_NO_Small,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW08050000Z0EA,0.094
+L1 ,1,27u,Inductor_SMD:L_Bourns_SRR1210A,,SRR1210-270M,1
+P1 ,1,ISP,Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical,,-,-
+P2 ,1,INPUT,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical,,Amphenol-861400402YO2LF,1.18
+P3 ,1,GND-PAD,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,,-,-
+P4 ,1,I2C,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical,,-,-
+P5 ,1,End-Stops,Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical,,-,-
+P6 ,1,DEV-PINS,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical,,-,-
+P7 P8 ,2,Motor,TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal,,Amphenol-VI0421550000G,0.84
+R1 R2 ,2,10k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW080510K0JNEA,0.091
+R10 R14 ,2,200,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW0805200RJNEA,0.091
+R11 ,1,147k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW0805147KFKEA,0.091
+R12 ,1,10.5k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW080510K5FKEA,0.091
+R18 R19 ,2,100k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW0805100KJNEA,0.091
+R3 R4 ,2,10,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW080510R0JNEA,0.091
+R5 ,1,120,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW0805120RJNEA,0.091
+R6 ,1,221k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW0805221KFKEA,0.091
+R13 R15 R16 R17 R7 R8 ,6,4.7k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW08054K70JNEA,0.091
+R9 ,1,26.7k,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,CRCW080526K7FKEA,0.091
+U1 ,1,SN65HVD485EDR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,,SN65HVD485EDR,1.74
+U2 ,1,Arduino_Pro_Mini_328,lsf-kicad-lib:Arduino_Pro_Mini_328,https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Arduino-Pro-Mini-v14.pdf,-,-
+U3 ,1,TPS54360DDA,Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias,,TPS54360DDAR,4
+U4 ,1,TC74,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,,TC74A05.0VCTTR,0.886
+U5 ,1,PCA9540B,Package_SO:TSSOP-8_3x3mm_P0.65mm,,PCA9540BDP 118,1.23
+U6 ,1,Pololu_Dual_MC33926,lsf-kicad-lib:Pololu_Dual_MC33926,https://www.pololu.com/product/1213,-,-

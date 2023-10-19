@@ -1,0 +1,241 @@
+--PAYLOAD--(1)
+bytearray(b'\xab\xba\x01@\xbc!\x0b\xbfP\xae\xae?\x8c\xc8\x1eA\x00 K\xbe\x00\xb8\x08?\x00\x00z\xbc\x00\x80\xc4A\x00\x80\xfcA\x00\x80\x96\xc1\x00\xac\xeaA')
+
+ACCEL X: -0.5435		ACCEL Y:  1.3647		ACCEL Z:  9.9240
+GYRO  X: -0.1984		GYRO  Y:  0.5341		GYRO  Z: -0.0153
+MAG   X: 24.5625		MAG   Y: 31.5625		MAG   Z: -18.8125
+TEMP: 29.3340
+
+
+--PAYLOAD--(2)
+bytearray(b'\xab\xba\x02\x00\xec\xe7\t\xbfP\xae\xae?\xf8\xe5\x1eA\x00\xe0+\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xc0A\x00@\x00B\x00\x80\x96\xc1\x00\xa4\xeaA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3647		ACCEL Z:  9.9311
+GYRO  X: -0.1678		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 24.0625		MAG   Y: 32.0625		MAG   Z: -18.8125
+TEMP: 29.3301
+
+--PAYLOAD--(3)
+bytearray(b'\xab\xba\x03\x00\x04K\t\xbf\xc4\xfc\xae?\xf8\xe5\x1eA\x00\xe0+\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xc8A\x00@\x04B\x00\x80\x97\xc1\x00\xf8\xeaA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3671		ACCEL Z:  9.9311
+GYRO  X: -0.1678		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 25.0625		MAG   Y: 33.0625		MAG   Z: -18.9375
+TEMP: 29.3711
+
+--PAYLOAD--(4)
+bytearray(b'\xab\xba\x04\x00\x04K\t\xbf\xdc_\xae?,\xdc\x1eA\x00\xe0+\xbe\x00\xa0\x0c?\x00\x00z\xbc\x00\x80\xbcA\x00\x80\xfcA\x00\x80\x99\xc1\x00\xf8\xeaA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3623		ACCEL Z:  9.9288
+GYRO  X: -0.1678		GYRO  Y:  0.5493		GYRO  Z: -0.0153
+MAG   X: 23.5625		MAG   Y: 31.5625		MAG   Z: -19.1875
+TEMP: 29.3711
+
+--PAYLOAD--(5)
+bytearray(b'\xab\xba\x05\x00\xec\xe7\t\xbf\xdc_\xae?\x8c\xc8\x1eA\x00\x80;\xbe\x00\x88\x10?\x00\x00z\xbc\x00\x80\xc4A\x00\x80\xfcA\x00\x80\x98\xc1\x00H\xebA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3623		ACCEL Z:  9.9240
+GYRO  X: -0.1831		GYRO  Y:  0.5646		GYRO  Z: -0.0153
+MAG   X: 24.5625		MAG   Y: 31.5625		MAG   Z: -19.0625
+TEMP: 29.4102
+
+--PAYLOAD--(6)
+bytearray(b'\xab\xba\x06\x00\xd4\x84\n\xbf\xdc_\xae?,\xdc\x1eA\x00\x80;\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xc4A\x00\x80\xf8A\x00\x80\x98\xc1\x00\xa8\xebA')
+
+ACCEL X: -0.5411		ACCEL Y:  1.3623		ACCEL Z:  9.9288
+GYRO  X: -0.1831		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 24.5625		MAG   Y: 31.0625		MAG   Z: -19.0625
+TEMP: 29.4570
+
+--PAYLOAD--(7)
+bytearray(b'\xab\xba\x07\x00\x04K\t\xbfh\x11\xae?\\\xd2\x1eA\x00\xe0+\xbe\x00\xb8\x08?\x00\x00\xfa\xbc\x00\x80\xd0A\x00\x80\xf8A\x00\x80\x98\xc1\x00\xa0\xebA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3599		ACCEL Z:  9.9264
+GYRO  X: -0.1678		GYRO  Y:  0.5341		GYRO  Z: -0.0305
+MAG   X: 26.0625		MAG   Y: 31.0625		MAG   Z: -19.0625
+TEMP: 29.4531
+
+--PAYLOAD--(8)
+bytearray(b'\xab\xba\x08\x00\xbc!\x0b\xbfh\x11\xae?\x8c\xc8\x1eA\x00 K\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xc4A\x00\x80\xfcA\x00\x80\x95\xc1\x00\x10\xecA')
+
+ACCEL X: -0.5435		ACCEL Y:  1.3599		ACCEL Z:  9.9240
+GYRO  X: -0.1984		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 24.5625		MAG   Y: 31.5625		MAG   Z: -18.6875
+TEMP: 29.5078
+
+--PAYLOAD--(9),
+bytearray(b'\xab\xba\t\x00\x1c\xae\x08\xbfh\x11\xae?\xc0\xbe\x1eA\x00\xc0Z\xbe\x00\xb8\x08?\x00\x00\xfa\xbc\x00\x80\xc4A\x00@\x00B\x00\x80\x96\xc1\x00\x14\xecA')
+
+ACCEL X: -0.5339		ACCEL Y:  1.3599		ACCEL Z:  9.9216
+GYRO  X: -0.2136		GYRO  Y:  0.5341		GYRO  Z: -0.0305
+MAG   X: 24.5625		MAG   Y: 32.0625		MAG   Z: -18.8125
+TEMP: 29.5098
+
+--PAYLOAD--(10),
+bytearray(b'\xaa\xba\n\x004\x11\x08\xbfh\x11\xae?\xc8\xef\x1eA\x08\x80;\xbe\x00\xa0\x0c?\x10\x80;\xbd\x00\x80\xe8A\x00\xc0\x02B\x00\x80\x96\xc1\x00\x14\xedA')
+
+ACCEL X: -0.5315		ACCEL Y:  1.3599		ACCEL Z:  9.9335
+GYRO  X: -0.1831		GYRO  Y:  0.5493		GYRO  Z: -0.0458
+MAG   X: 29.0625		MAG   Y: 32.6875		MAG   Z: -18.8125
+TEMP: 29.6348
+
+--PAYLOAD--(11)
+bytearray(b'\xab\xba\x0b\x00\x04K\t\xbf\xf4\xc2\xad?\x94\xf9\x1eA\x00\x80;\xbe\x00\xb8\x08?\x00\x00z\xbc\x00\x80\xc8A\x00@\x00B\x00\x80\x97\xc1\x00l\xecA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3575		ACCEL Z:  9.9359
+GYRO  X: -0.1831		GYRO  Y:  0.5341		GYRO  Z: -0.0153
+MAG   X: 25.0625		MAG   Y: 32.0625		MAG   Z: -18.9375
+TEMP: 29.5527
+
+--PAYLOAD--(12)
+bytearray(b'\xab\xba\x0c\x00\x1c\xae\x08\xbf\xdc_\xae?\\\xd2\x1eA\x00 K\xbe\x00\xd0\x04?\x00\x00z\xbd\x00\x80\xc4A\x00\x80\xf8A\x00\x80\x97\xc1\x00(\xedA')
+
+ACCEL X: -0.5339		ACCEL Y:  1.3623		ACCEL Z:  9.9264
+GYRO  X: -0.1984		GYRO  Y:  0.5188		GYRO  Z: -0.0610
+MAG   X: 24.5625		MAG   Y: 31.0625		MAG   Z: -18.9375
+TEMP: 29.6445
+
+--PAYLOAD--(13),
+bytearray(b'\xab\xba\r\x00\xec\xe7\t\xbf\x80t\xad?,\xdc\x1eA\x00\x80;\xbe\x00\xa0\x0c?\x00\x00z\xbc\x00\x80\xc0A\x00@\x02B\x00\x80\x97\xc1\x00\xfc\xecA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3551		ACCEL Z:  9.9288
+GYRO  X: -0.1831		GYRO  Y:  0.5493		GYRO  Z: -0.0153
+MAG   X: 24.0625		MAG   Y: 32.5625		MAG   Z: -18.9375
+TEMP: 29.6230
+
+--PAYLOAD--(14)
+bytearray(b'\xab\xba\x0e\x00\xd4\x84\n\xbf\x0c&\xad?,\xdc\x1eA\x00@\x1c\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xc4A\x00@\x00B\x00\x80\x94\xc1\x00T\xedA')
+
+ACCEL X: -0.5411		ACCEL Y:  1.3527		ACCEL Z:  9.9288
+GYRO  X: -0.1526		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 24.5625		MAG   Y: 32.0625		MAG   Z: -18.5625
+TEMP: 29.6660
+
+--PAYLOAD--(15)
+bytearray(b'\xab\xba\x0f\x00\x1c\xae\x08\xbf\x0c&\xad?\\\xd2\x1eA\x00 K\xbe\x00\xa0\x0c?\x00\x80;\xbd\x00\x80\xb8A\x00@\x00B\x00\x80\x96\xc1\x00t\xedA')
+
+ACCEL X: -0.5339		ACCEL Y:  1.3527		ACCEL Z:  9.9264
+GYRO  X: -0.1984		GYRO  Y:  0.5493		GYRO  Z: -0.0458
+MAG   X: 23.0625		MAG   Y: 32.0625		MAG   Z: -18.8125
+TEMP: 29.6816
+
+--PAYLOAD--(16)
+bytearray(b'\xab\xba\x10\x00\x04K\t\xbf\x80t\xad?\\\xd2\x1eA\x00 K\xbe\x00\xb8\x08?\x00\x00\xfa\xbc\x00\x80\xc0A\x00\x80\xfcA\x00\x80\x97\xc1\x00\x10\xeeA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3551		ACCEL Z:  9.9264
+GYRO  X: -0.1984		GYRO  Y:  0.5341		GYRO  Z: -0.0305
+MAG   X: 24.0625		MAG   Y: 31.5625		MAG   Z: -18.9375
+TEMP: 29.7578
+
+--PAYLOAD--(17)
+bytearray(b'\xab\xba\x11\x00\x04K\t\xbfh\x11\xae?\x8c\xc8\x1eA\x00\x80;\xbe\x00\xd0\x04?\x00\x00\xfa\xbc\x00\x80\xc8A\x00@\x02B\x00\x80\x9a\xc1\x00\x0c\xeeA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3599		ACCEL Z:  9.9240
+GYRO  X: -0.1831		GYRO  Y:  0.5188		GYRO  Z: -0.0305
+MAG   X: 25.0625		MAG   Y: 32.5625		MAG   Z: -19.3125
+TEMP: 29.7559
+
+--PAYLOAD--(18)
+bytearray(b'\xab\xba\x12\x00\xd4\x84\n\xbfh\x11\xae?\\\xd2\x1eA\x00\xe0+\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xbcA\x00\x80\xfcA\x00\x80\x93\xc1\x00|\xeeA')
+
+ACCEL X: -0.5411		ACCEL Y:  1.3599		ACCEL Z:  9.9264
+GYRO  X: -0.1678		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 23.5625		MAG   Y: 31.5625		MAG   Z: -18.4375
+TEMP: 29.8105
+
+--PAYLOAD--(19)
+bytearray(b'\xab\xba\x13\x00\xec\xe7\t\xbf\xf4\xc2\xad?\\\xd2\x1eA\x00@\x1c\xbe\x00\xe8\x00?\x00\x80;\xbd\x00\x80\xc8A\x00@\x00B\x00\x80\x99\xc1\x00\x0c\xeeA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3575		ACCEL Z:  9.9264
+GYRO  X: -0.1526		GYRO  Y:  0.5035		GYRO  Z: -0.0458
+MAG   X: 25.0625		MAG   Y: 32.0625		MAG   Z: -19.1875
+TEMP: 29.7559
+
+--PAYLOAD--(20)
+bytearray(b'\xab\xba\x14\x00\x04K\t\xbf\x80t\xad?\x8c\xc8\x1eA\x00\xe0+\xbe\x00p\x14?\x00\x00\xfa\xbc\x00\x80\xc8A\x00\x80\xfcA\x00\x80\x98\xc1\x00\xe4\xeeA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3551		ACCEL Z:  9.9240
+GYRO  X: -0.1678		GYRO  Y:  0.5798		GYRO  Z: -0.0305
+MAG   X: 25.0625		MAG   Y: 31.5625		MAG   Z: -19.0625
+TEMP: 29.8613
+
+--PAYLOAD--(21)
+bytearray(b'\xab\xba\x15\x00\xd4\x84\n\xbf\x80t\xad?\x8c\xc8\x1eA\x00\xe0+\xbe\x00\xd0\x04?\x00\x00z\xbc\x00\x80\xc8A\x00@\x02B\x00\x80\x99\xc1\x00\xbc\xeeA')
+
+ACCEL X: -0.5411		ACCEL Y:  1.3551		ACCEL Z:  9.9240
+GYRO  X: -0.1678		GYRO  Y:  0.5188		GYRO  Z: -0.0153
+MAG   X: 25.0625		MAG   Y: 32.5625		MAG   Z: -19.1875
+TEMP: 29.8418
+
+--PAYLOAD--(22)
+bytearray(b'\xab\xba\x16\x00\xec\xe7\t\xbfh\x11\xae?\\\xd2\x1eA\x00\xe0+\xbe\x00\x88\x10?\x00\x00\xfa\xbc\x00\x80\xc4A\x00@\x00B\x00\x80\x98\xc1\x00,\xefA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3599		ACCEL Z:  9.9264
+GYRO  X: -0.1678		GYRO  Y:  0.5646		GYRO  Z: -0.0305
+MAG   X: 24.5625		MAG   Y: 32.0625		MAG   Z: -19.0625
+TEMP: 29.8965
+
+--PAYLOAD--(23)
+bytearray(b'\xab\xba\x17\x00\xec\xe7\t\xbf\x80t\xad?\x8c\xc8\x1eA\x00\x80;\xbe\x00\x88\x10?\x00\x00z\xbc\x00\x80\xbcA\x00\x80\xfcA\x00\x80\x94\xc1\x00\x80\xefA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3551		ACCEL Z:  9.9240
+GYRO  X: -0.1831		GYRO  Y:  0.5646		GYRO  Z: -0.0153
+MAG   X: 23.5625		MAG   Y: 31.5625		MAG   Z: -18.5625
+TEMP: 29.9375
+
+--PAYLOAD--(24)
+bytearray(b'\xab\xba\x18\x00\x04K\t\xbf\x0c&\xad?\\\xd2\x1eA\x00\xe0+\xbe\x00\xb8\x08?\x00\x00z\xbc\x00\x80\xc8A\x00\x80\xfcA\x00\x80\x97\xc1\x00\xc8\xefA')
+
+ACCEL X: -0.5363		ACCEL Y:  1.3527		ACCEL Z:  9.9264
+GYRO  X: -0.1678		GYRO  Y:  0.5341		GYRO  Z: -0.0153
+MAG   X: 25.0625		MAG   Y: 31.5625		MAG   Z: -18.9375
+TEMP: 29.9727
+
+--PAYLOAD--(25)
+bytearray(b'\xab\xba\x19\x00\xec\xe7\t\xbf\x0c&\xad?\xc0\xbe\x1eA\x00 K\xbe\x00\xb8\x08?\x00\x80;\xbd\x00\x80\xc0A\x00@\x02B\x00\x80\x97\xc1\x00\xc4\xefA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3527		ACCEL Z:  9.9216
+GYRO  X: -0.1984		GYRO  Y:  0.5341		GYRO  Z: -0.0458
+MAG   X: 24.0625		MAG   Y: 32.5625		MAG   Z: -18.9375
+TEMP: 29.9707
+
+--PAYLOAD--(26)
+bytearray(b'\xab\xba\x1a\x00\xec\xe7\t\xbf\x0c&\xad?\x8c\xc8\x1eA\x00`j\xbe\x00\xe8\x00?\x00\x00\xfa\xbc\x00\x80\xc0A\x00@\x00B\x00\x80\x99\xc1\x00\xc8\xefA')
+
+ACCEL X: -0.5387		ACCEL Y:  1.3527		ACCEL Z:  9.9240
+GYRO  X: -0.2289		GYRO  Y:  0.5035		GYRO  Z: -0.0305
+MAG   X: 24.0625		MAG   Y: 32.0625		MAG   Z: -19.1875
+TEMP: 29.9727
+
+--PAYLOAD--(27)
+bytearray(b'\xab\xba\x1b\x00\xbc!\x0b\xbf\x0c&\xad?,\xdc\x1eA\x00\xe0+\xbe\x00\xd0\x04?\x00\x80;\xbd\x00\x80\xc4A\x00\x80\xfcA\x00\x80\x9a\xc1\x00<\xf0A')
+
+ACCEL X: -0.5435		ACCEL Y:  1.3527		ACCEL Z:  9.9288
+GYRO  X: -0.1678		GYRO  Y:  0.5188		GYRO  Z: -0.0458
+MAG   X: 24.5625		MAG   Y: 31.5625		MAG   Z: -19.3125
+TEMP: 30.0293
+
+--PAYLOAD--(28)
+bytearray(b'\xab\xba\x1c\x00\xbc!\x0b\xbf\x0c&\xad?\xf8\xe5\x1eA\x00\x80;\xbe\x00\xb8\x08?\x00\x00\xfa\xbc\x00\x80\xc4A\x00\x80\xfcA\x00\x80\x98\xc1\x00\xa8\xf0A')
+
+ACCEL X: -0.5435		ACCEL Y:  1.3527		ACCEL Z:  9.9311
+GYRO  X: -0.1831		GYRO  Y:  0.5341		GYRO  Z: -0.0305
+MAG   X: 24.5625		MAG   Y: 31.5625		MAG   Z: -19.0625
+TEMP: 30.0820
+
+--PAYLOAD--(29)
+bytearray(b'\xab\xba\x1d\x00\xa4\xbe\x0b\xbf$\x89\xac?\x8c\xc8\x1eA\x00@\x1c\xbe\x00\xd0\x04?\x00\x00\xfa\xbc\x00\x80\xc0A\x00@\x00B\x00\x80\x97\xc1\x00,\xf0A')
+
+ACCEL X: -0.5459		ACCEL Y:  1.3479		ACCEL Z:  9.9240
+GYRO  X: -0.1526		GYRO  Y:  0.5188		GYRO  Z: -0.0305
+MAG   X: 24.0625		MAG   Y: 32.0625		MAG   Z: -18.9375
+TEMP: 30.0215
+
+--PAYLOAD--(30)
+bytearray(b'\xab\xba\x1e\x00\xd4\x84\n\xbf$\x89\xac?\\\xd2\x1eA\x00@\x1c\xbe\x00\xa0\x0c?\x00\x00\xfa\xbc\x00\x80\xc4A\x00\x80\xf4A\x00\x80\x96\xc1\x000\xf0A')
+
+ACCEL X: -0.5411		ACCEL Y:  1.3479		ACCEL Z:  9.9264
+GYRO  X: -0.1526		GYRO  Y:  0.5493		GYRO  Z: -0.0305
+MAG   X: 24.5625		MAG   Y: 30.5625		MAG   Z: -18.8125
+TEMP: 30.0234
+
