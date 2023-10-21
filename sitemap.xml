@@ -11,12 +11,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware%20description/</loc>
+         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.1.%20Printed%20circuit%20boards/</loc>
          <lastmod>2023-10-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.1.%20Printed%20circuit%20boards/</loc>
+         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.2.%20Antenna/</loc>
+         <lastmod>2023-10-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.3.%20Rails/</loc>
+         <lastmod>2023-10-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.4.%20Standoffs%2C%20inserts%20and%20screws/</loc>
+         <lastmod>2023-10-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.5.%20Mounting%20base/</loc>
          <lastmod>2023-10-21</lastmod>
          <changefreq>daily</changefreq>
     </url>

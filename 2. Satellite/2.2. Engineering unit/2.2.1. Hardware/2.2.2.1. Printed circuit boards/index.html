@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.1.%20Printed%20circuit%20boards/" />
       <link rel="shortcut icon" href="../../../../img/favicon.ico" />
-    <title>2.2.2.1. Printed circuit boards - PROMETHEUS-1 Wiki</title>
+    <title>Printed Circuit Boards (PCBs) - PROMETHEUS-1 Wiki</title>
     <link rel="stylesheet" href="../../../../css/theme.css" />
     <link rel="stylesheet" href="../../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "2.2.2.1. Printed circuit boards";
+        var mkdocs_page_name = "Printed Circuit Boards (PCBs)";
         var mkdocs_page_input_path = "2. Satellite/2.2. Engineering unit/2.2.1. Hardware/2.2.2.1. Printed circuit boards.md";
         var mkdocs_page_url = "/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.2.1.%20Printed%20circuit%20boards/";
       </script>
@@ -45,19 +45,27 @@
               </ul>
               <p class="caption"><span class="caption-text">2. Satellite</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../../../2.1.%20Guide%20description/">2.1. Guide description</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../2.1.%20Guide%20description/">Guide description</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">2.2. Engineering unit</a>
     <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../../2.2.1.%20Hardware%20description/">2.2.1. Hardware description</a>
-                </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">2.2.1. Hardware</a>
     <ul class="current">
-                <li class="toctree-l3 current"><a class="reference internal current" href="./">2.2.2.1. Printed circuit boards</a>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Printed Circuit Boards (PCBs)</a>
     <ul class="current">
     <li class="toctree-l4"><a class="reference internal" href="#inside-boards">Inside boards</a>
     </li>
+    <li class="toctree-l4"><a class="reference internal" href="#outside-boards">Outside boards</a>
+    </li>
     </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.2.2.%20Antenna/">Antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.2.3.%20Rails/">Rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.2.4.%20Standoffs%2C%20inserts%20and%20screws/">Standoffs, inserts and screws</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.2.5.%20Mounting%20base/">Mounting base</a>
                 </li>
     </ul>
                 </li>
@@ -81,7 +89,7 @@
           <li class="breadcrumb-item">2. Satellite</li>
           <li class="breadcrumb-item">2.2. Engineering unit</li>
           <li class="breadcrumb-item">2.2.1. Hardware</li>
-      <li class="breadcrumb-item active">2.2.2.1. Printed circuit boards</li>
+      <li class="breadcrumb-item active">Printed Circuit Boards (PCBs)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -90,18 +98,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h3 id="printed-circuit-boards-pcbs">Printed Circuit Boards (PCBs)</h3>
+                <h1 id="printed-circuit-boards-pcbs">Printed Circuit Boards (PCBs)</h1>
 <p>The PCBs are the fundamental hardware of the PyCubed-Mini, as they are precisely designed to hold its required components, as well as their connections, being that external, with USB-C connectors to easily interface with a computer or internal ones: between components in the same board, through the middle of it; or between board with stack connectors, with data and power lines.</p>
 <p>The satellite is composed of eleven PCBs in total: five horizontally stacked inside, one on top of the other; and six covering each outside face of the cube. The KiCad schematics and board designs, as well as the gerber files for each are released in <a href="/2.Satellite/Hardware/Boards">Boards</a>. The recommended manufacturing option is to print the boards and solder the components at specialized companies, since there are multiple components in each board, some of them with different maximum temperature, in very reduced size or in need of a reflow oven.</p>
 <p>This section will only mention the primary components and their references, discarding stack connectors and power regulation (present in all), reset and boot switches and status LEDs (present in some).</p>
 <p><br /> </p>
-<h4 id="inside-boards">Inside boards</h4>
+<h2 id="inside-boards">Inside boards</h2>
 <p>The first group is divided in main board, camera board and battery boards.</p>
+<p><br /> </p>
+<h3 id="main-board">Main board</h3>
+<p>The main board contains the ATSAMD51J19A main microcontroller and MAX706 external watchdog timer, BNO085 IMU sensor and magnetorquer drivers, PCF8523 Real Time Clock, RFM98 radio module for 433 MHz LoRa communication, a USB-C connector for side power, flashing and communicating and SD Card connector for data logging.</p>
+<p><img alt="Main board" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i02.mainboard.png?raw=true" /></p>
+<p><br /> </p>
+<h3 id="camera-board">Camera board</h3>
+<p>The camera board, as the name tells, holds the OV5640 camera, the STM32H743VI camera microcontroller, an SD Card connector for image savings, and a USB-C connector, for the same reasons as the main board. The camera ribbon cable is placed on the desired connector and should be fixed in the center square with tiny quantities of epoxy.</p>
+<p><img alt="Camera board" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i03.cameraboard.png?raw=true" /></p>
+<p><br /> </p>
+<h3 id="battery-boards">Battery boards</h3>
+<p>Two LP603443 batteries present in the satellite are placed between the three battery boards, wired in parallel for improved capacity, each with 3.7 V and 3.15 Wh. The circuitry is capable of sensing the current drawn and measuring its voltage.</p>
+<p><img alt="Battery boards" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i04.batteryboards.png?raw=true" /></p>
+<p><br /> </p>
+<h2 id="outside-boards">Outside boards</h2>
+<p>In all six solar boards (Figure 7), there are 14-turn coils serving as magnetorquers, 42 solar cells (KXOB25-05X3F) spread by the available space, energy harvesting systems, as well as OPT3001 sunlight sensors. There is also the antenna and burn wires, for its deployment, in one of the faces. Also, at the bottom one, there are two position switches that cut the battery power when pressed, preventing power draining during testing and storing. It has also a hole in the center, enabling the camera to take visible pictures.</p>
+<p><img alt="Solar boards" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i05.solarboards.png?raw=true" /></p>
+<p>In all solar boards, there is a 0 Ω resistor that is responsible for defining the correct I2C bus assignment. For negative axis boards, this SMD type wire pulls the I2C line to ground, while in positive boards, it should pull to power. </p>
+<p><img alt="I2C" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i06.i2c.png?raw=true" /></p>
+<p>You can also check some important voltage potential values, such as (B)attery, (G)roud, (S)olar panels and (3).3 V, in the holes near the board edges.</p>
+<p><br /> </p>
+<h3 id="x-x-y-boards">+X, -X, +Y boards</h3>
+<p>These boards are equal, composed of eight solar cells each. </p>
+<h3 id="-y-board">-Y board</h3>
+<p>This board, besides the eight solar cells, holds two position switches that cut the battery power when pressed, preventing power draining during testing and storing. It has also a hole in the center, enabling the camera to take pictures.</p>
+<h3 id="z-board">+Z board</h3>
+<p>This board holds the two holes needed for the USB-C connectors in main and camera boards, besides the six solar cells.</p>
+<h3 id="-z-board">-Z board</h3>
+<p>This board, besides the four solar cells, holds the antenna, which is holded in place with fishing line tied to each burn wire.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../2.2.1.%20Hardware%20description/" class="btn btn-neutral float-left" title="2.2.1. Hardware description"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../2.1.%20Guide%20description/" class="btn btn-neutral float-left" title="Guide description"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.2.2.2.%20Antenna/" class="btn btn-neutral float-right" title="Antenna">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -124,8 +161,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../2.2.1.%20Hardware%20description/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../../2.1.%20Guide%20description/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../2.2.2.2.%20Antenna/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
