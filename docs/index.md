@@ -4,23 +4,23 @@ This website is composed of indexed pages which describe some important document
 
 #### Index
 
-2. Satellite
+1. Satellite
 
-    2.1. Guide description
+    1. Guide description
 
-    2.2. Engineering unit
+    1. Engineering unit
 
-        2.2.1. Hardware
+        1. Hardware
 
-            2.2.1.1. Printed circuit boards
+            1. Printed circuit boards
             
-            2.2.1.2. Antenna
+            1. Antenna
             
-            2.2.1.3. Rails
+            1. Rails
             
-            2.2.1.4. Standoffs, inserts and screws
+            1. Standoffs, inserts and screws
             
-            2.2.1.5. Mounting base
+            1. Mounting base
         
         2.2.2. Firmware
             
