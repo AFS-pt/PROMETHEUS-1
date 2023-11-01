@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.4.%20Unitary%20testing/2.2.4.1.%20Unitary%20testing%20description/" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>Unitary testing - PROMETHEUS-1 Wiki</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Unitary testing";
+        var mkdocs_page_input_path = "2. Satellite/2.2. Engineering unit/2.2.4. Unitary testing/2.2.4.1. Unitary testing description.md";
+        var mkdocs_page_url = "/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.4.%20Unitary%20testing/2.2.4.1.%20Unitary%20testing%20description/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> PROMETHEUS-1 Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Welcome to the PROMETHEUS-1 project wiki!</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Satellite</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../2.1.%20Guide%20description/">Guide description</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.2. Engineering unit</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.1. Hardware</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.1.%20Printed%20circuit%20boards/">Printed Circuit Boards (PCBs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.2.%20Antenna/">Antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.3.%20Rails/">Rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.4.%20Standoffs%2C%20inserts%20and%20screws/">Standoffs, inserts and screws</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.5.%20Mounting%20base/">Mounting base</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.2. Firmware</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.1.%20Firmware%20description/">Firmware description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.2.%20Flash%20SAMD%20UF2%20bootloader%20on%20mainboard/">Flash SAMD UF2 bootloader on mainboard</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.3.%20Flash%20CircuitPython%20on%20mainboard/">Flash CircuitPython on mainboard</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.3. Software</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.1.%20Software%20description/">Software description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.2.%20Build%20an%20application/">Build an application</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.3.%20Flash%20an%20application/">Flash an application</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">2.2.4. Unitary testing</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Unitary testing</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.4.2.%20Mainboard%20payload/">Mainboard payload</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.4.3.%20LoRa%20communication/">LoRa communication</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.4.4.%20Camera%20detection/">Camera detection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.5. Assembly</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.1.%20Assembly%20description/">Assembly description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.2.%20Creating%20an%20antenna/">Creating an antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.3.%20Placing%20inserts%20on%20rails/">Placing inserts on rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.4.%20Assemblying%20the%20satellite/">Assemblying the satellite</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.5.%20Charging%20the%20batteries/">Charging the batteries</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.6. System check</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.6.%20System%20check/2.2.6.1.%20System%20check%20description/">System check</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">2.3. Flight unit</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../2.3.%20Flight%20unit/2.3.1.%20Flight%20unit%20considerations/">Vibration testing and bake-out process</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">PROMETHEUS-1 Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">2. Satellite</li>
+          <li class="breadcrumb-item">2.2. Engineering unit</li>
+          <li class="breadcrumb-item">2.2.4. Unitary testing</li>
+      <li class="breadcrumb-item active">Unitary testing</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="unitary-testing">Unitary testing</h1>
+<p>By unitary testing, we refer to simple tests that can and should be made before assembling an entire unit. These can detect some errors or damages when testing individuals systems, for example, on communication or board detections. In this chapter, there are some detailed steps and expected results to be achieved during this type of testing.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../2.2.3.%20Software/2.2.3.3.%20Flash%20an%20application/" class="btn btn-neutral float-left" title="Flash an application"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.2.4.2.%20Mainboard%20payload/" class="btn btn-neutral float-right" title="Mainboard payload">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../2.2.3.%20Software/2.2.3.3.%20Flash%20an%20application/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.2.4.2.%20Mainboard%20payload/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.5.%20Assembly/2.2.5.4.%20Assemblying%20the%20satellite/" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>Assemblying the satellite - PROMETHEUS-1 Wiki</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Assemblying the satellite";
+        var mkdocs_page_input_path = "2. Satellite/2.2. Engineering unit/2.2.5. Assembly/2.2.5.4. Assemblying the satellite.md";
+        var mkdocs_page_url = "/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.5.%20Assembly/2.2.5.4.%20Assemblying%20the%20satellite/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> PROMETHEUS-1 Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Welcome to the PROMETHEUS-1 project wiki!</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Satellite</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../2.1.%20Guide%20description/">Guide description</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.2. Engineering unit</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.1. Hardware</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.1.%20Printed%20circuit%20boards/">Printed Circuit Boards (PCBs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.2.%20Antenna/">Antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.3.%20Rails/">Rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.4.%20Standoffs%2C%20inserts%20and%20screws/">Standoffs, inserts and screws</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.5.%20Mounting%20base/">Mounting base</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.2. Firmware</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.1.%20Firmware%20description/">Firmware description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.2.%20Flash%20SAMD%20UF2%20bootloader%20on%20mainboard/">Flash SAMD UF2 bootloader on mainboard</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.3.%20Flash%20CircuitPython%20on%20mainboard/">Flash CircuitPython on mainboard</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.3. Software</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.1.%20Software%20description/">Software description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.2.%20Build%20an%20application/">Build an application</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.3.%20Flash%20an%20application/">Flash an application</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.4. Unitary testing</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.4.%20Unitary%20testing/2.2.4.1.%20Unitary%20testing%20description/">Unitary testing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.4.%20Unitary%20testing/2.2.4.2.%20Mainboard%20payload/">Mainboard payload</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.4.%20Unitary%20testing/2.2.4.3.%20LoRa%20communication/">LoRa communication</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.4.%20Unitary%20testing/2.2.4.4.%20Camera%20detection/">Camera detection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">2.2.5. Assembly</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.5.1.%20Assembly%20description/">Assembly description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.5.2.%20Creating%20an%20antenna/">Creating an antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.5.3.%20Placing%20inserts%20on%20rails/">Placing inserts on rails</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Assemblying the satellite</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#what-you-need">What you need</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-1-place-the-inside-boards-and-rails">Step 1: Place the inside boards and rails</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-2-add-the-outside-boards">Step 2: Add the outside boards</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-3-tie-the-antenna">Step 3: Tie the antenna</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#video-guide">Video guide</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.5.5.%20Charging%20the%20batteries/">Charging the batteries</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.6. System check</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.6.%20System%20check/2.2.6.1.%20System%20check%20description/">System check</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">2.3. Flight unit</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../2.3.%20Flight%20unit/2.3.1.%20Flight%20unit%20considerations/">Vibration testing and bake-out process</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">PROMETHEUS-1 Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">2. Satellite</li>
+          <li class="breadcrumb-item">2.2. Engineering unit</li>
+          <li class="breadcrumb-item">2.2.5. Assembly</li>
+      <li class="breadcrumb-item active">Assemblying the satellite</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="assemblying-the-satellite">Assemblying the satellite</h1>
+<p>This chapter will describe the steps required to place the rails, inside and outside boards on the correct order and position on order to assemble the PocketQube. It is recommended to open the CAD assembly file, released in <a href="/2.Satellite/Hardware/Mechanical_Structure">Mechanical Structure</a>, to help visualize it.</p>
+<p><br /></p>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>
+<p><a href="#printed-circuit-boards-pcbs">PCBs</a>, with the <a href="#creating-an-antenna">antenna</a> and the camera on place;</p>
+</li>
+<li>
+<p><a href="#rails">Rails</a> with the <a href="#placing-inserts-on-rails">inserts</a> on place;</p>
+</li>
+<li>
+<p><a href="#standoffs-heat-inserts-and-screws">Standoffs and screws</a>;</p>
+</li>
+<li>
+<p><a href="#fishing-line">Fishing line</a>;</p>
+</li>
+<li>
+<p>2x LP603443 batteries;</p>
+</li>
+<li>
+<p>u.FL male to u.FL male cable;</p>
+</li>
+<li>
+<p>Kapton adhesive tape;</p>
+</li>
+<li>
+<p>Precision toolkit;</p>
+</li>
+</ul>
+<p><br /></p>
+<h2 id="step-1-place-the-inside-boards-and-rails">Step 1: Place the inside boards and rails</h2>
+<ul>
+<li>
+<p>Start by putting the camera board inside the -Y rail, with the camera pointing towards the inside of the rail;</p>
+</li>
+<li>
+<p>Place four M3 (8 mm) standoffs in each corner and screw them;</p>
+</li>
+</ul>
+<p><em>TIP: making a cross pattern, screw the standoffs only a couple of times each until they give a lot of resistance</em></p>
+<ul>
+<li>
+<p>Plug the main board onto the camera board by its vertical connectors and make sure it aligns in the corners;</p>
+</li>
+<li>
+<p>Again, place four M3 (8 mm) standoffs in each corner and screw them;</p>
+</li>
+<li>
+<p>Plug the bottom battery board onto the stack, add four M3 (6 mm) standoffs in each corner and screw them;</p>
+</li>
+<li>
+<p>Solder both batteries to the corresponding polarity pads in each face of the middle battery board;</p>
+</li>
+<li>
+<p>Fix the batteries and its wires to the board with Kapton adhesive tape;</p>
+</li>
+<li>
+<p>Plug the finished middle battery board on top of the current satellite stack;</p>
+</li>
+<li>
+<p>Place four M3 (6 mm) standoffs in each corner and screw them;</p>
+</li>
+<li>
+<p>Plug the top battery board onto the middle one;</p>
+</li>
+<li>
+<p>Place the +Y rail on top of the stack and make sure its inserts match the silk note circles positions in the battery board;</p>
+</li>
+<li>
+<p>Screw the rail and board in place with 4 units of M3 (6 mm) screws;</p>
+</li>
+</ul>
+<p><br /></p>
+<h2 id="step-2-add-the-outside-boards">Step 2: Add the outside boards</h2>
+<ul>
+<li>
+<p>Carefully connect the u.FL to u.FL antenna cable to the main board connector and leave the other end outside the stack;</p>
+</li>
+<li>
+<p>Place -X solar board in its designed face, with solar cells outwards and making sure the placement of the side connector between the board and the stack is correct;</p>
+</li>
+<li>
+<p>Screw the board in place with 4x M2 (5 mm) screws, following the same screwing technique as before;</p>
+</li>
+<li>
+<p>Repeat the previous points with the +Y and +Z boards;</p>
+</li>
+<li>
+<p>Place and screw the -Y board to the -Y rail with 4x M3 (4 mm) screws;</p>
+</li>
+<li>
+<p>After that, connect the remaining end of the u.FL cable to the -Z board connector and place the board. Managing the cable through the +X side, certify that it passes through the inside board's hollow space present in the -Z side;</p>
+</li>
+<li>
+<p>When completed, screw the board with 4x M2 (5 mm) units;</p>
+</li>
+<li>
+<p>Finally, close the satellite with the +X board and screw it with 4x M2 (5 mm) screws;</p>
+</li>
+</ul>
+<p><br /> </p>
+<h2 id="step-3-tie-the-antenna">Step 3: Tie the antenna</h2>
+<ul>
+<li>
+<p>Tightly wrap the antenna strips around the satellite and temporarily fix them with adhesive tape;</p>
+</li>
+<li>
+<p>Cut two pieces of fishing line with around 20 cm long;</p>
+</li>
+</ul>
+<p><em>TIP: this length is more than enough but it makes the tying easier.</em></p>
+<ul>
+<li>
+<p>Pass the line through the first antenna tip hole and the first burn wire, tie it with a square knot and cut the surplus;</p>
+</li>
+<li>
+<p>Repeat the previous point on the other antenna strip;</p>
+</li>
+</ul>
+<p><br /></p>
+<h2 id="video-guide">Video guide</h2>
+<p>Press on the image to be redirected to view the video guide on YouTube.</p>
+<p><a href="https://youtu.be/qyBwiglurZg"><img alt="Assemblying the satellite" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/v03.assembly.jpg?raw=true" /></a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2.2.5.3.%20Placing%20inserts%20on%20rails/" class="btn btn-neutral float-left" title="Placing inserts on rails"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.2.5.5.%20Charging%20the%20batteries/" class="btn btn-neutral float-right" title="Charging the batteries">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2.2.5.3.%20Placing%20inserts%20on%20rails/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.2.5.5.%20Charging%20the%20batteries/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

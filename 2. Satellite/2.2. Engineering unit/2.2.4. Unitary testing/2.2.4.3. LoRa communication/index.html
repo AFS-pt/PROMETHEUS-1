@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wp-net.github.io/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.4.%20Unitary%20testing/2.2.4.3.%20LoRa%20communication/" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>LoRa communication - PROMETHEUS-1 Wiki</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "LoRa communication";
+        var mkdocs_page_input_path = "2. Satellite/2.2. Engineering unit/2.2.4. Unitary testing/2.2.4.3. LoRa communication.md";
+        var mkdocs_page_url = "/prometheus/2.%20Satellite/2.2.%20Engineering%20unit/2.2.4.%20Unitary%20testing/2.2.4.3.%20LoRa%20communication/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> PROMETHEUS-1 Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Welcome to the PROMETHEUS-1 project wiki!</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Satellite</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../2.1.%20Guide%20description/">Guide description</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.2. Engineering unit</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.1. Hardware</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.1.%20Printed%20circuit%20boards/">Printed Circuit Boards (PCBs)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.2.%20Antenna/">Antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.3.%20Rails/">Rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.4.%20Standoffs%2C%20inserts%20and%20screws/">Standoffs, inserts and screws</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.1.%20Hardware/2.2.1.5.%20Mounting%20base/">Mounting base</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.2. Firmware</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.1.%20Firmware%20description/">Firmware description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.2.%20Flash%20SAMD%20UF2%20bootloader%20on%20mainboard/">Flash SAMD UF2 bootloader on mainboard</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.2.%20Firmware/2.2.2.3.%20Flash%20CircuitPython%20on%20mainboard/">Flash CircuitPython on mainboard</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.3. Software</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.1.%20Software%20description/">Software description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.2.%20Build%20an%20application/">Build an application</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.3.%20Software/2.2.3.3.%20Flash%20an%20application/">Flash an application</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">2.2.4. Unitary testing</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.4.1.%20Unitary%20testing%20description/">Unitary testing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.4.2.%20Mainboard%20payload/">Mainboard payload</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">LoRa communication</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#what-you-need">What you need</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-1-configure-the-groundstation-for-sending">Step 1: Configure the groundstation for sending</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-2-set-the-satellite-for-receiving">Step 2: Set the satellite for receiving</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-3-invert-the-communication-direction">Step 3: Invert the communication direction</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../2.2.4.4.%20Camera%20detection/">Camera detection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.5. Assembly</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.1.%20Assembly%20description/">Assembly description</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.2.%20Creating%20an%20antenna/">Creating an antenna</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.3.%20Placing%20inserts%20on%20rails/">Placing inserts on rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.4.%20Assemblying%20the%20satellite/">Assemblying the satellite</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.5.%20Assembly/2.2.5.5.%20Charging%20the%20batteries/">Charging the batteries</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">2.2.6. System check</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../2.2.6.%20System%20check/2.2.6.1.%20System%20check%20description/">System check</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">2.3. Flight unit</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../2.3.%20Flight%20unit/2.3.1.%20Flight%20unit%20considerations/">Vibration testing and bake-out process</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">PROMETHEUS-1 Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">2. Satellite</li>
+          <li class="breadcrumb-item">2.2. Engineering unit</li>
+          <li class="breadcrumb-item">2.2.4. Unitary testing</li>
+      <li class="breadcrumb-item active">LoRa communication</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="lora-communication">LoRa communication</h1>
+<p>Another test that can be performed is the correct sending or receiving of LoRa packets. This can only be achieved while main board and antenna (-Z) board are connected, which is extremely important, since the absence of an antenna (load) may damage the trasmitter due to wave (power) reflection implying voltage and current overloads <a href="https://electronics.stackexchange.com/questions/335912/can-i-break-a-radio-tranceiving-device-by-operating-it-with-no-antenna-connected">[1]</a>.</p>
+<p>The test software is released in <a href="/2.Satellite/Software/Tests/">Tests</a>, and is already built. To fully test, a second device is needed to check if the satellite is either able to successfully send of receive the packets. It can be another satellite (with both using the same test files) or a groundstation, composed of a ESP-32 or Raspberry Pi microcontroller with a compatible LoRa chip.</p>
+<p>During testing phase, we had all the options stated: <a href="https://meshtastic.org/docs/hardware/devices/tbeam/">LILYGO® TTGO T-Beam v1.1</a>, a ESP-32 based groundstation; and RExLab custom groundstation, RPi based; and another twin satellite. We will cover the first case since it can be more easily replicated, either with a similar designed board or just with a simple ESP-32/Arduino connected to a LoRa IC.</p>
+<p><br />  </p>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>
+<p>Mu Editor and Arduino IDE;</p>
+</li>
+<li>
+<p>Lora Radio Range Test files;</p>
+</li>
+<li>
+<p>Main and -Z board;</p>
+</li>
+<li>
+<p>u.FL male to u.FL male cable;</p>
+</li>
+<li>
+<p>USB-C cable, with power and data lines;</p>
+</li>
+<li>
+<p>Another LoRa device for validation;</p>
+</li>
+</ul>
+<p><br /> </p>
+<h2 id="step-1-configure-the-groundstation-for-sending">Step 1: Configure the groundstation for sending</h2>
+<ul>
+<li>
+<p>After installing Arduino IDE, install the ESP32 board drivers (follow this <a href="https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/">tutorial</a>). In our case, the board reference changes to 'TTGO LoRa32-OLED' and the COM port may be defined to another instance;</p>
+</li>
+<li>
+<p>Install the libraries needed for peripherals, such as the OLED and LoRa chip (follow this <a href="https://randomnerdtutorials.com/ttgo-lora32-sx1276-arduino-ide/">tutorial</a>);</p>
+</li>
+<li>
+<p>Create a project with the sender sketch from the last tutorial, compile, run and open Serial Viewer, configured with the correct parameters. Again, in our case, change the board pins (MISO, SDA, ...) to the correct board <a href="https://meshtastic.org/assets/images/t-beam_v1.1_pinmap-7c3402af077cdf2a5f90645561e049dc.webp">pinout</a> and frequency (433 MHz);</p>
+</li>
+<li>
+<p>The OLED should display the init prompt and the board starting to send packets.</p>
+</li>
+</ul>
+<p><br /> </p>
+<h2 id="step-2-set-the-satellite-for-receiving">Step 2: Set the satellite for receiving</h2>
+<ul>
+<li>
+<p>Connect the main and -Z boards with the u.FL cable;</p>
+</li>
+<li>
+<p>Like the previous unitary test, copy the files to the mainboard, open Mu Editor serial console and start running the program (CTRL+D);</p>
+</li>
+<li>
+<p>Follow the serial prompt, selecting the satellite option, followed by the radio parameters change (the default options should be fine);</p>
+</li>
+<li>
+<p>Finally, you should set the receiving mode with acknowledge;</p>
+</li>
+<li>
+<p>In a few seconds, it should print the received LoRa packet info, such as the RSSI and the message;</p>
+</li>
+</ul>
+<p align="middle">
+  <img src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i09.testsetup.jpg" width="500" />
+  <img src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i10.serialviewer.png" width="500" />
+</p>
+
+<p><br /> </p>
+<h2 id="step-3-invert-the-communication-direction">Step 3: Invert the communication direction</h2>
+<p>To make the groundstation for Rx mode, you can simply use the receiver sketch instead of the sender one, also released in the previous <a href="https://randomnerdtutorials.com/ttgo-lora32-sx1276-arduino-ide/">tutorial website</a> and switch the satellite to Tx mode on prompt.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2.2.4.2.%20Mainboard%20payload/" class="btn btn-neutral float-left" title="Mainboard payload"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.2.4.4.%20Camera%20detection/" class="btn btn-neutral float-right" title="Camera detection">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2.2.4.2.%20Mainboard%20payload/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.2.4.4.%20Camera%20detection/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
