@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wp-net.github.io/prometheus/2.%20Satellite/2.3.%20Flight%20unit/2.3.1.%20Flight%20unit%20considerations/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://wp-net.github.io/prometheus/2.%20Satellite/2.1.%20Guide%20introduction/2.1.1.%20Guide%20description/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Flight unit considerations - PROMETHEUS-1 Wiki</title>
+    <title>Guide description - PROMETHEUS-1 Wiki</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Flight unit considerations";
-        var mkdocs_page_input_path = "2. Satellite/2.3. Flight unit/2.3.1. Flight unit considerations.md";
-        var mkdocs_page_url = "/prometheus/2.%20Satellite/2.3.%20Flight%20unit/2.3.1.%20Flight%20unit%20considerations/";
+        var mkdocs_page_name = "Guide description";
+        var mkdocs_page_input_path = "2. Satellite/2.1. Guide introduction/2.1.1. Guide description.md";
+        var mkdocs_page_url = "/prometheus/2.%20Satellite/2.1.%20Guide%20introduction/2.1.1.%20Guide%20description/";
       </script>
     
     <!--[if lt IE 9]>
@@ -45,9 +45,11 @@
               </ul>
               <p class="caption"><span class="caption-text">2. Satellite</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="#">2.1. Guide introduction</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../2.1.%20Guide%20introduction/2.1.1.%20Guide%20description/">Guide description</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.1. Guide introduction</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Guide description</a>
+    <ul class="current">
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -121,21 +123,9 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.3. Flight unit</a>
-    <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Flight unit considerations</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#vibration-testing-and-bake-out-process">Vibration testing and bake-out process</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#day-in-the-life-testing">Day in the life testing</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#assembly-precautions">Assembly precautions</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#loctite-usage">Loctite usage</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#windform-rails">Windform rails</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">2.3. Flight unit</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.3.%20Flight%20unit/2.3.1.%20Flight%20unit%20considerations/">Flight unit considerations</a>
                 </li>
     </ul>
                   </li>
@@ -155,8 +145,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">2. Satellite</li>
-          <li class="breadcrumb-item">2.3. Flight unit</li>
-      <li class="breadcrumb-item active">Flight unit considerations</li>
+          <li class="breadcrumb-item">2.1. Guide introduction</li>
+      <li class="breadcrumb-item active">Guide description</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -165,30 +155,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="flight-unit-considerations">Flight unit considerations</h1>
-<p>This chapter explains only the different steps and precautions required during the flight unit manufacture, assembly and testing.</p>
-<h2 id="vibration-testing-and-bake-out-process">Vibration testing and bake-out process</h2>
-<p>After the assembly, the satellite hardware must pass through vibration testing to certify that it can handle the launch. The vibration profile to test for is usually given by the launcher company and is specific for form factors or weight and the type of vibration. While all the tests are required for certification, usually the most important vibration test is the sinusoidal with frequencies up to 100 Hz, due to the predominance on launch. Consulting SpaceX Rideshare Payload User's Guide, the structure should handle at least 1.5 g. </p>
-<p>A vibe fixture was developed to couple the satellite with the vibration table, released on <a href="/2.Satellite/Hardware/Fixtures">Fixtures</a>. It is not recommended to use 3D-printed PLA as tends to damp higher frequencies and instead, consider alluminum for the case.</p>
-<p>At last, the satellite goes through a bake-out process to accelerate outgassing, thus preventing contamination of the launcher pod and payload.</p>
-<p><br /> </p>
-<h2 id="day-in-the-life-testing">Day in the life testing</h2>
-<p>Another important test is made to evaluate long-period satellite functioning. The test is performed by leaving the satellite running outdoors for an entire day, if possible being hit by the sun, to charge with the solar cells, and protected by the rain, to prevent damage. By the end of the test, the satellite should be running as it was left, and the batteries voltage be higher than previously.</p>
-<p><br /> </p>
-<h2 id="assembly-precautions">Assembly precautions</h2>
-<p>Before the procedure, drop and scrub the boards and its components with isopropyl alcohol (IPA). In this assembly procedure, more than required in engineering satellite units, the use of nitrile gloves and anti-static mat and wrist strap is very important. Although it is not mandatory, the assembly should be made in an ISO cleanliness certified room, if possible. Also, satellite transportation should be made inside an EMF protection bag, in a Nanuk case.</p>
-<p><br /> </p>
-<h2 id="loctite-usage">Loctite usage</h2>
-<p>On flight unit, Loctite 222 is used in all screw surfaces. Just a few drops are enough to provide additional strength and prevent unscrewing.</p>
-<p><br /> </p>
-<h2 id="windform-rails">Windform rails</h2>
-<p>Instead of PLA rails, a carbon-fiber-reinforced polyamide material called <a href="https://www.windform.com/sls-materials/windform-xt-2-0/">Windform XT 2.0</a> was used for the rails. It provides improved specific strength and NASA outgassing certification.</p>
-<p><img alt="Rails" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i14.rails.png?raw=true" /></p>
+                <h1 id="guide-description">Guide description</h1>
+<p>During two weeks on June 2023, a couple of stacks were successfully build at University of Minho, in which this guide is based. It provides a detailed step-by-step guide to correctly assemble and system check a PyCubed-Mini framework satellite of a PocketQube size. We also give some tips and useful notes for the process, learnt from this and previous builds at Carnergie Mellon University, where it was originally created and developed through multiple revisions.</p>
+<p>During the development of a space mission, there are usually two separate units to build: an Engineering Unit and a Flight Unit. As the names sound, one is meant to validade all the hardware, firmware and software needed, while the other replicates it for a launch, ensuring extra safe and clean procedures, as required by launch companies.</p>
+<p>This guide will be initially divided by each unit type, then mentioning the required parts to assemble each stack, describing the purpose and available options for fullfilling each one of the elements required. After, there will be some single testing of that parts, followed by the final assembly steps, for completing the stack, and final checking procedures.</p>
+<p>This guide follows a sort of chronological order to facilitate its following, yet advised to fully read it first to avoid mistakes during the procedure.</p>
+<p><img alt="Satellite" src="https://github.com/AFS-pt/PROMETHEUS-1_dev/blob/main/2.Satellite/images/i01.satellite.JPG?raw=true" /></p>
+<p>For better readibility, check the <a href="https://github.com/AFS-pt/PROMETHEUS-1/blob/main/docs">Docs</a> folder for each Readme file.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../2.2.%20Engineering%20unit/2.2.6.%20System%20check/2.2.6.1.%20System%20check%20description/" class="btn btn-neutral float-left" title="System check"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../.." class="btn btn-neutral float-left" title="Welcome to the PROMETHEUS-1 project wiki!"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.1.1.%20Printed%20circuit%20boards/" class="btn btn-neutral float-right" title="Printed Circuit Boards (PCBs)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -211,8 +190,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../2.2.%20Engineering%20unit/2.2.6.%20System%20check/2.2.6.1.%20System%20check%20description/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../.." style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../../2.2.%20Engineering%20unit/2.2.1.%20Hardware/2.2.1.1.%20Printed%20circuit%20boards/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
