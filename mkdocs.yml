@@ -1,3 +1,4 @@
 site_name: PROMETHEUS-1 Wiki
 site_url: https://wp-net.github.io/prometheus/
-theme: readthedocs
+theme: 
+  name: material
