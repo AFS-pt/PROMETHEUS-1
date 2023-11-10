@@ -885,7 +885,7 @@
     (uuid fad6f95f-97e5-446b-b101-2b99c79ac074)
   )
 
-  (text "Solar Panel Board X" (at 200.533 176.149 0)
+  (text "Solar Panel Board X-" (at 200.533 176.149 0)
     (effects (font (size 3.81 3.81) (thickness 0.762) bold) (justify left bottom))
     (uuid 15291019-609f-4844-ab86-5e12604e3677)
   )
@@ -988,7 +988,7 @@
     (pin "1" (uuid 9fde72d9-4bed-45d7-bad0-f2fc4559d8c8))
     (pin "2" (uuid 0fc29fd1-b8e7-4b6b-860c-6595511cf032))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R19") (unit 1)
         )
@@ -1016,7 +1016,7 @@
     )
     (pin "1" (uuid 98c53b77-0e93-4bfc-8f20-81e23d19ffc2))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "#PWR0111") (unit 1)
         )
@@ -1064,7 +1064,7 @@
     (pin "4" (uuid 2a432709-937d-467a-9ab5-0ae9f01ac410))
     (pin "5" (uuid 61233308-9055-4560-b8ba-9c0d3c9e8bf1))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q2") (unit 2)
         )
@@ -1096,7 +1096,7 @@
     (pin "1" (uuid b8317b37-64f5-409c-aac3-22c497feac6e))
     (pin "2" (uuid e82735c8-4554-478c-98c7-b7b75f8b599b))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R27") (unit 1)
         )
@@ -1124,7 +1124,7 @@
     )
     (pin "1" (uuid f3702ecc-0e4b-4aaf-9343-a3355e434a3b))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "#PWR0108") (unit 1)
         )
@@ -1172,7 +1172,7 @@
     (pin "4" (uuid 42efdd20-c5b5-419d-abeb-42ae8ea35524))
     (pin "5" (uuid 4d7f51b4-f72e-4092-b418-685577376cdd))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q2") (unit 1)
         )
@@ -1204,7 +1204,7 @@
     (pin "1" (uuid 99402905-797b-41d5-8091-874a4ca1d474))
     (pin "2" (uuid f8b9a602-a358-4eea-91ef-62112fd87d44))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R25") (unit 1)
         )
@@ -1252,7 +1252,7 @@
     (pin "4" (uuid a1d916d8-63d9-48e6-8973-44400d253e88))
     (pin "5" (uuid 8b646864-62c2-4313-8085-5f593e52dd26))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q4") (unit 2)
         )
@@ -1280,7 +1280,7 @@
     )
     (pin "1" (uuid 0c0f478b-14ef-4055-be3a-7d5710efe82d))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "#PWR0107") (unit 1)
         )
@@ -1312,7 +1312,7 @@
     (pin "1" (uuid 30f1865a-6534-4974-a9ec-fd4418951b7c))
     (pin "2" (uuid 084f35d8-476f-44ae-9fb6-3124f3a00961))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R23") (unit 1)
         )
@@ -1344,7 +1344,7 @@
     (pin "1" (uuid 96b8857d-41a4-4b91-a892-90239194e84b))
     (pin "2" (uuid 13cbc35d-2337-4a22-8e95-23bd9d6c18f2))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R30") (unit 1)
         )
@@ -1376,7 +1376,7 @@
     (pin "1" (uuid 3d16cc53-0ec3-402b-ad15-78526f885a80))
     (pin "2" (uuid b368cc86-16e0-4e14-b74d-8753d5874830))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "C13") (unit 1)
         )
@@ -1418,7 +1418,7 @@
     (pin "4" (uuid 0414c9f4-7329-49ea-8387-20f9c23af6f2))
     (pin "5" (uuid 597540f1-addf-493b-8e48-ed8386f85523))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q3") (unit 1)
         )
@@ -1450,7 +1450,7 @@
     (pin "1" (uuid 3122b881-1662-41b1-b588-0262ca1d4388))
     (pin "2" (uuid ce32886b-3b19-43c3-b230-76168f5e62f9))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R24") (unit 1)
         )
@@ -1478,7 +1478,7 @@
     )
     (pin "1" (uuid 8e52785f-ace7-4198-8465-c44d05a54fc8))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "#PWR0110") (unit 1)
         )
@@ -1520,7 +1520,7 @@
     (pin "4" (uuid a2a3c05b-9c88-450f-a754-dc5916410103))
     (pin "5" (uuid a3ea0c4f-c620-4e78-82ab-7a9d5579af40))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q1") (unit 1)
         )
@@ -1555,7 +1555,7 @@
     (pin "1" (uuid 41cffe13-a755-4c2a-8518-1cc3d3f59c80))
     (pin "2" (uuid c2958b05-c3d9-4e10-8bd5-d7796c693e3a))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R20") (unit 1)
         )
@@ -1587,7 +1587,7 @@
     (pin "1" (uuid fd27c827-e13c-40db-b4c1-cffcf555e007))
     (pin "2" (uuid e8dbaabf-dd60-4be5-aa05-c915b16597e7))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R28") (unit 1)
         )
@@ -1629,7 +1629,7 @@
     (pin "4" (uuid 7643c645-ec2b-4d58-9274-99f59b61cc01))
     (pin "5" (uuid 8fe59ce9-764d-4fb4-b49d-2580eebc1717))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q1") (unit 2)
         )
@@ -1661,7 +1661,7 @@
     (pin "1" (uuid 376f2338-3a7b-45f4-854e-4c5f5d7a627e))
     (pin "2" (uuid 62db49ff-d8b5-420f-a679-17c09b2fba48))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R21") (unit 1)
         )
@@ -1693,7 +1693,7 @@
     (pin "1" (uuid 8002fa47-7d1d-40d7-a5f0-b7a415a9bbce))
     (pin "2" (uuid 9c0b3a8a-4663-4f36-af7a-66d6f62bb4bd))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "C12") (unit 1)
         )
@@ -1721,7 +1721,7 @@
     )
     (pin "1" (uuid 30e55d9e-8052-4266-a783-dce65278a41a))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "#PWR0109") (unit 1)
         )
@@ -1753,7 +1753,7 @@
     (pin "1" (uuid 172031c9-3442-4086-8290-28ae38bbe1c1))
     (pin "2" (uuid 1a57b08f-063d-4ace-ab26-36d92f8394d9))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R26") (unit 1)
         )
@@ -1801,7 +1801,7 @@
     (pin "4" (uuid 2d953027-1711-4aaf-a013-823fb385c44b))
     (pin "5" (uuid 125e1834-0b70-463b-8237-386142b3a999))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q4") (unit 1)
         )
@@ -1843,7 +1843,7 @@
     (pin "4" (uuid a1ef0744-8c99-47e1-ab17-1f82e97d2381))
     (pin "5" (uuid d54fd5a1-6f51-4898-b8e2-4682607a6a55))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "Q3") (unit 2)
         )
@@ -1871,7 +1871,7 @@
     )
     (pin "1" (uuid 89fd91c0-9d71-4fb9-abe0-5c9a61a04abd))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "#PWR0106") (unit 1)
         )
@@ -1903,7 +1903,7 @@
     (pin "1" (uuid 00969e93-a529-445c-a6d6-eb3ab70512b4))
     (pin "2" (uuid 9892c173-0211-4c10-b6ae-6ad660cbf4a5))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R22") (unit 1)
         )
@@ -1935,7 +1935,7 @@
     (pin "1" (uuid 7f3aac21-b9ae-46ed-9b8f-82d48c4918d5))
     (pin "2" (uuid 25970078-49c6-46f4-bea7-c1e09d342a1e))
     (instances
-      (project "Solar-Panel-X"
+      (project "Solar-Panel-X-"
         (path "/b5352a33-563a-4ffe-a231-2e68fb54afa3"
           (reference "R29") (unit 1)
         )

@@ -882,8 +882,6 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d19511b2-5790-4240-a34e-353a5ea87d21)
     )
-    (fp_rect (start -4.4902 -3.0176) (end -3.7902 0.0824)
-      (stroke (width 0.12) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 77543dbc-bb7c-46c3-a11d-c1dadb450ac8))
     (fp_rect (start -2.5902 -1.1176) (end -5.6902 -1.8176)
       (stroke (width 0.12) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 470f2a0e-dea0-43de-812f-b6180195242c))
     (fp_poly
@@ -6312,9 +6310,6 @@
   )
   (gr_text "G" (at 99.17 85.4) (layer "F.SilkS") (tstamp 6f2c0a51-969a-4bb8-8c39-4bff0b0850be)
     (effects (font (size 0.508 0.508) (thickness 0.1016)))
-  )
-  (gr_text "JLCJLCJLCJLC" (at 94.6 79.7) (layer "F.SilkS") (tstamp 908f0efd-a885-4394-a6f7-105887c97de7)
-    (effects (font (size 0.635 0.635) (thickness 0.1016)))
   )
   (gr_text "(4L)" (at 110.35 84.65) (layer "F.SilkS") (tstamp b2eeafa3-038c-4e47-840b-4f3a82005910)
     (effects (font (size 0.635 0.635) (thickness 0.127)))
