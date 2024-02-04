@@ -1557,7 +1557,7 @@
       (net 5 "/V_REG") (pintype "passive") (tstamp 270584c9-2f30-4fb1-b5b1-ebae31a3f729))
     (pad "2" smd rect (at 1.725 0 90) (size 1.25 1.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 37 "Net-(ERBRG3R00V1-Pad2)") (pintype "passive") (tstamp b6258f71-bcd6-49ec-920d-a172b09e5de2))
-    (model "ERBRG3R00V.stp"
+    (model "C:/Users/pedro/Documents/KiCad/7.0/MyLib.pretty/ERBRG3R00V/ERBRG3R00V.stp"
       (offset (xyz 0 -0.3699999992 0.3799999895))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

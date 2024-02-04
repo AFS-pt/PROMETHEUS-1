@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "mainboard")(type "KiCad")(uri "${KIPRJMOD}/../kicad-libs/mainboard.pretty")(options "")(descr ""))
+  (lib (name "batteryboard")(type "KiCad")(uri "${KIPRJMOD}/../kicad-libs/batteryboard.pretty")(options "")(descr ""))
+)
