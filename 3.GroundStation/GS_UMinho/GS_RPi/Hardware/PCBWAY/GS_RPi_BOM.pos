@@ -1,0 +1,33 @@
+### Footprint positions - created on Monday, February 12, 2024 at 05:55:07 PM ###
+### Printed by KiCad version 7.0.9
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref           Val               Package                                             PosX       PosY       Rot  Side
+3296W-1-502LF1  5K                Potentiometer_Bourns_3296W_Vertical              28.4480     9.9060  180.0000  top
+C1              0.1uF             C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      60.6435    30.9615   90.0000  top
+C2              10uF              C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      58.6435    30.9615   90.0000  top
+C3              10uF              C_0805_2012Metric_Pad1.18x1.45mm_HandSolder       9.4240    11.0420  -90.0000  top
+C4              22uF              C_0805_2012Metric_Pad1.18x1.45mm_HandSolder       9.4240     5.0420   90.0000  top
+C5              0.1uF             C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      15.5905    23.4210  -90.0000  top
+C6              0.1uF             C_0603_1608Metric_Pad1.08x0.95mm_HandSolder      17.7495    23.3945  -90.0000  top
+D1              POW               LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder    62.7075     6.7220  -90.0000  top
+ERBRG3R00V1     3A                ERBRG4R00V                                       11.0185    22.9130   90.0000  top
+J1              Raspberry_Pi_2_3  PinSocket_2x20_P2.54mm_Vertical                   8.8240    40.7520   90.0000  top
+J2              Coax_SMA          SMA_Amphenol_901-144_Vertical                    55.7700    13.1110    0.0000  top
+J3              Barrel_Jack       BarrelJack_Horizontal                             8.4240    33.2420    0.0000  top
+J4              VCC               TestPoint_Loop_D2.50mm_Drill1.0mm                 3.4240    16.5420    0.0000  top
+J5              V_REG             TestPoint_Loop_D2.50mm_Drill1.0mm                 3.3985    11.4300    0.0000  top
+J6              GND               TestPoint_Loop_D2.50mm_Drill1.0mm                 3.3985     6.4770    0.0000  top
+J7              3.3V              TestPoint_Loop_D2.50mm_Drill1.0mm                 3.4240    21.5900    0.0000  top
+R1              10K               R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      15.3765    29.4800   90.0000  top
+R2              10K               R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      17.8765    29.4800   90.0000  top
+R3              2.8K              R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      19.9085     4.7150   90.0000  top
+R4              8.2K              R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      21.7975     9.1440    0.0000  top
+R5              200               R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      24.3375     2.9210  180.0000  top
+R10             0                 R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      11.0185    16.7640   90.0000  top
+R11             0                 R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      17.8308    33.7980   90.0000  top
+R12             0                 R_0805_2012Metric_Pad1.20x1.40mm_HandSolder      15.4635    33.7820  -90.0000  top
+U1              RFM98PW           RFM95PW                                          38.4240    29.5420    0.0000  top
+U2              AZ2185D-ADJTRG1
+  TO-252-2                                         14.7040     6.5020  -90.0000  top
+## End

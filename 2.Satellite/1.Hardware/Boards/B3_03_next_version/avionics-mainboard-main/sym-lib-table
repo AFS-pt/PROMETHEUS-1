@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mainboard")(type "KiCad")(uri "${KIPRJMOD}/kicad-libs/mainboard.kicad_sym")(options "")(descr ""))
+  (lib (name "cameraboard")(type "KiCad")(uri "${KIPRJMOD}/kicad-libs/cameraboard.kicad_sym")(options "")(descr ""))
+)

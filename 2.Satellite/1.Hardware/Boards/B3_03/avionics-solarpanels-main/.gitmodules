@@ -1,3 +1,0 @@
-[submodule "kicad-libs"]
-	path = kicad-libs
-	url = git@github.com:PyCubed-Mini/kicad-libs.git

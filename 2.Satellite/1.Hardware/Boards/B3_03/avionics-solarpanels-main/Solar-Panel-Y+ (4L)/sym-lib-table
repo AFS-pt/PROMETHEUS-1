@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "solarpanels")(type "KiCad")(uri "${KIPRJMOD}/../kicad-libs/solarpanels.kicad_sym")(options "")(descr ""))
-  (lib (name "mainboard")(type "KiCad")(uri "${KIPRJMOD}/../kicad-libs/mainboard.kicad_sym")(options "")(descr ""))
-)
