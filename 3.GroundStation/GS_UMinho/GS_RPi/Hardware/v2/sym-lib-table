@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RF_Module_HOPERF")(type "KiCad")(uri "${KIPRJMOD}/Libraries/RF_Module_HOPERF.kicad_sym")(options "")(descr "HOPERF RF modules"))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ERBRG3R00V
+D Micro Chip Fuse, Size [LW] (EIA) (mm): 3.21.6 (EIA:1206), Rated Current (A): 3, Internal R [at 25 max.] (m): 45, Rated Voltage (Open Circuit Voltage) [DC] (V): 32, Interrupting Rating (A): 50, Category Temp. Range (C): -40 to +125
+K
+F https://industrial.panasonic.com/cdbs/www-data/pdf/AFA0000/AFA0000C7.pdf
+$ENDCMP
+#
+#End Doc Library
