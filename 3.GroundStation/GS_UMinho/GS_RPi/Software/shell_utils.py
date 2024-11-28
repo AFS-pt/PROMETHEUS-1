@@ -1,3 +1,5 @@
+from lib.configuration import radio_configuration as rf_config
+
 """
 A collection of functions for getting and validating inputs
 """
@@ -102,48 +104,68 @@ def manually_configure_radio(radio):
 
 
 def manually_configure_rfm9x(device):
-    device.frequency_mhz = set_param_from_input_range(device.frequency_mhz, f"Frequency (currently {device.frequency_mhz} MHz)",
-                                                      [240.0, 960.0], allow_default=True)
-    device.tx_power = set_param_from_input_discrete(device.tx_power, f"Power (currently {device.tx_power} dB)",
-                                                    [f"{i}" for i in range(5, 24)], allow_default=True)
-    device.coding_rate = set_param_from_input_discrete(device.coding_rate,
-                                                       f"coding_rate currently {device.coding_rate}",
-                                                       [f"{i}" for i in range(5, 9)],
-                                                       allow_default=True)
-    device.spreading_factor = set_param_from_input_discrete(device.spreading_factor,
-                                                            f"current spreading factor {device.spreading_factor}",
-                                                            [f"{i}" for i in range(6, 13)],
-                                                            allow_default=True)
-    device.signal_bandwidth = set_param_from_input_discrete(device.signal_bandwidth,
-                                                            f"signal bandwidth currently {device.signal_bandwidth}",
-                                                            ["7800", "10400", "15600", "20800", "31250", "41700", "62500", "125000", "250000"],
-                                                            allow_default=True)
-    # device.bitrate = set_param_from_input_range(device.bitrate, f"Bitrate (currently {device.bitrate} bps)",
-    #                                             [500, 300000], allow_default=True)
-    # device.frequency_deviation = set_param_from_input_range(device.frequency_deviation, f"Frequency deviation (currently {device.frequency_deviation})",
-    #                                                         [600, 200000], allow_default=True)
-    # device.rx_bandwidth = set_param_from_input_discrete(device.rx_bandwidth, f"Receiver filter bandwidth (single-sided, currently {device.rx_bandwidth})",
-    #                                                     [f"{device._bw_bins_kHz[i]}" for i in range(len(device._bw_bins_kHz))], allow_default=True, type=float)
-    device.lna_gain = set_param_from_input_discrete(device.lna_gain, f"LNA Gain - [max = 1, min = 6] (currently {device.lna_gain})",
-                                                    [f"{i}" for i in range(1, 7)], allow_default=True)
-    device.preamble_length = set_param_from_input_range(device.preamble_length, f"Preamble length (currently {device.preamble_length})",
-                                                        [3, 2**16], allow_default=True)
-    # device.afc_enable = set_param_from_input_discrete(device.afc_enable, f"Enable automatic frequency calibration (AFC) (currently {device.afc_enable})",
-    #                                                   ["0", "1"], allow_default=True)
+    device.frequency_mhz = set_param_from_input_range(device.frequency_mhz,
+                                                      f"Frequency (currently {device.frequency_mhz} MHz)",
+                                                      [240.0, 960.0],
+                                                      allow_default=True)
+    device.tx_power = set_param_from_input_discrete(device.tx_power, 
+                                                    f"Power (currently {device.tx_power} dB)",
+                                                    [f"{i}" for i in range(5, 24)],
+                                                    allow_default=True)
+    device.lna_gain = set_param_from_input_discrete(device.lna_gain, 
+                                                    f"LNA Gain - [max = 1, min = 6] (currently {device.lna_gain})",
+                                                    [f"{i}" for i in range(1, 7)],
+                                                    allow_default=True)
+    device.preamble_length = set_param_from_input_range(device.preamble_length,
+                                                        f"Preamble length (currently {device.preamble_length})",
+                                                        [3, 2**16],
+                                                        allow_default=True)
+    if rf_config.PROTOCOL == "fsk":
+        device.bitrate = set_param_from_input_range(device.bitrate,
+                                                    f"Bitrate (currently {device.bitrate} bps)",
+                                                    [500, 300000],
+                                                    allow_default=True)
+        device.frequency_deviation = set_param_from_input_range(device.frequency_deviation,
+                                                                f"Frequency deviation (currently {device.frequency_deviation})",
+                                                                [600, 200000],
+                                                                allow_default=True)
+        device.rx_bandwidth = set_param_from_input_discrete(device.rx_bandwidth,
+                                                            f"Receiver filter bandwidth (single-sided, currently {device.rx_bandwidth})",
+                                                            [f"{device._bw_bins_kHz[i]}" for i in range(len(device._bw_bins_kHz))],
+                                                            allow_default=True, type=float)
+        device.afc_enable = set_param_from_input_discrete(device.afc_enable,
+                                                          f"Enable automatic frequency calibration (AFC) (currently {device.afc_enable})",
+                                                          ["0", "1"],
+                                                          allow_default=True)
+    if rf_config.PROTOCOL == "lora":
+        device.coding_rate = set_param_from_input_discrete(device.coding_rate,
+                                                           f"coding_rate currently {device.coding_rate}",
+                                                           [f"{i}" for i in range(5, 9)],
+                                                           allow_default=True)
+        device.spreading_factor = set_param_from_input_discrete(device.spreading_factor,
+                                                                f"current spreading factor {device.spreading_factor}",
+                                                                [f"{i}" for i in range(6, 13)],
+                                                                allow_default=True)
+        device.signal_bandwidth = set_param_from_input_discrete(device.signal_bandwidth,
+                                                                f"signal bandwidth currently {device.signal_bandwidth}",
+                                                                ["7800", "10400", "15600", "20800", "31250", "41700", "62500", "125000", "250000"],
+                                                                allow_default=True)
 
 
 def print_rfm9x_configuration(device):
     print(f"\tFrequency = {device.frequency_mhz} MHz")
     print(f"\tPower = {device.tx_power} dBm")
-    print(f"\tcoding reate = {device.coding_rate}")
-    print(f"\tsignal bandwidth = {device.signal_bandwidth}")
-    print(f"\tspreading factor = {device.spreading_factor}")
-    # print(f"\tBitrate = {device.bitrate} Hz")
-    # print(f"\tFrequency Deviation = {device.frequency_deviation}")
-    # print(f"\tRX filter bandwidth = {device.rx_bandwidth}")
-    # print(f"\tLNA Gain [max = 1, min = 6] = {device.lna_gain}")
+    print(f"\tLNA Gain [max = 1, min = 6] = {device.lna_gain}")
     print(f"\tPreamble Length = {device.preamble_length}")
-    # print(f"\tAFC enabled = {device.afc_enable}")
+    if rf_config.PROTOCOL == "fsk":
+        print(f"\tBitrate = {device.bitrate} Hz")
+        print(f"\tFrequency Deviation = {device.frequency_deviation}")
+        print(f"\tRX filter bandwidth = {device.rx_bandwidth}")
+        print(f"\tAFC enabled = {device.afc_enable}")
+    elif rf_config.PROTOCOL == "lora":
+        print(f"\tSpreading Factor = {device.spreading_factor}")
+        print(f"\tCoding Rate = {device.coding_rate}")
+        print(f"\tsignal_bandwidth = {device.signal_bandwidth}")
 
 
 def print_radio_configuration(radio):

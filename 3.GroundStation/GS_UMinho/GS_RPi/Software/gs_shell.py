@@ -22,6 +22,7 @@ if supervisor is not None:
 
 prompt_options = {"Receive loop": ("r", "receive"),
                   "Beacon request loop": ("b", "beacon"),
+                  "Image request loop": ("i", "image"),
                   "Upload file": ("u", "upload"),
                   "Request file": ("rf", "request"),
                   "Send command": ("c", "command"),
@@ -47,12 +48,13 @@ def gs_shell_radio_setup():
         f"""Select the board/radio:
             {bold}(s){normal} satellite,
             {bold}(f){normal} feather,
+            {bold}(p){normal} raspberry pi,
             {bold}(t){normal} RPiGS TX,
             {bold}(r){normal} RPiGS RX,
-            {bold}(d){normal} RPiGS TX and RX (dual),
-            {bold}(p){normal} RPiGS TX and RX (single)
+            {bold}(c){normal} RPiGS TX and RX (dual radio),
+            {bold}(o){normal} RPiGS TX and RX (single radio),
             """,
-        ["s", "f", "t", "r", "d", "p"]
+        ["s", "f", "p", "t", "r", "c", "o"]
     )
 
     if board_str == "s":
@@ -63,39 +65,42 @@ def gs_shell_radio_setup():
         spi, cs, reset = feather_spi_config()
         radio = initialize_radio(spi, cs, reset)
         print(f"{bold}{green}Feather{normal} selected")
+    elif board_str == "p":
+        spi, cs, reset = pi_spi_config()
+        radio = initialize_radio(spi, cs, reset)
+        print(f"{bold}{green}Raspberry Pi{normal} selected")
     elif board_str == "t":
         spi, cs, reset = rpigs_tx_spi_config()
         rxtx_switch = RXTXSwitch(board.D26, board.D17, board.D27)
         radio = initialize_radio(spi, cs, reset, rxtx_switch=rxtx_switch)
-        print(f"{bold}{green}Raspberry Pi TX{normal} selected")
+        print(f"{bold}{green}RPiGS TX{normal} selected")
     elif board_str == "r":
         spi, cs, reset = rpigs_rx_spi_config()
         rxtx_switch = RXTXSwitch(board.D26, board.D17, board.D27)
         radio = initialize_radio(spi, cs, reset, rxtx_switch=rxtx_switch)
-        print(f"{bold}{green}Raspberry Pi RX{normal} selected")
-    elif board_str == "d":
+        print(f"{bold}{green}RPiGS RX{normal} selected")
+    elif board_str == "c":
         tx_spi, tx_cs, tx_reset = rpigs_tx_spi_config()
         rx_spi, rx_cs, rx_reset = rpigs_rx_spi_config()
-
         rxtx_switch = RXTXSwitch(board.D26, board.D17, board.D27)
         radio = initialize_radio(tx_spi, tx_cs, tx_reset, rx_spi, rx_cs, rx_reset, rxtx_switch=rxtx_switch)
-        print(f"{bold}{green}Raspberry Pi TX+RX dual{normal} selected")
-    elif board_str == "p":
+        print(f"{bold}{green}RPiGS TX and RX (dual radio){normal} selected")
+    elif board_str == "o":
         spi, cs, reset = rpigs_spi_config()
         radio = initialize_radio(spi, cs, reset)
-        print(f"{bold}{green}Raspberry Pi TX+RX single{normal} selected")
+        print(f"{bold}{green}RPiGS TX and RX (single radio){normal} selected")
     else:
         raise ValueError(f"Board string {board_str} invalid")
 
     print_radio_configuration(radio)
 
-    if get_input_discrete(f"Change radio parameters? {bold}(y/N){normal}", ["", "y", "n"]) == "y":
+    if get_input_discrete(
+            f"Change radio parameters? {bold}(y/N){normal}", ["", "y", "n"]) == "y":
         manually_configure_radio(radio)
         print_radio_configuration(radio)
 
     return radio
 
-    
 
 def gs_shell_main_loop(radio):
     verbose = True
@@ -114,6 +119,13 @@ def gs_shell_main_loop(radio):
                 logname = input("log file name (empty to not log) = ")
                 def get_beacon_noargs(): return get_beacon(radio, debug=verbose, logname=logname)
                 tasko.schedule(beacon_frequency_hz, get_beacon_noargs, 10)
+                tasko.run()
+
+            elif choice in prompt_options["Image request loop"]:
+                image_period = get_input_range("Request period (seconds)", (120, 1000), allow_default=False)
+                image_frequency_hz = 1.0 / float(image_period)
+                def get_image_noargs(): return get_image(radio, debug=verbose)
+                tasko.schedule(image_frequency_hz, get_image_noargs, 10)
                 tasko.run()
 
             elif choice in prompt_options["Upload file"]:

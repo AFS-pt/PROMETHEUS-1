@@ -4,8 +4,8 @@ try:
     from ulab.numpy import array, nan
 except ImportError:
     from numpy import array, nan
-from lib.pycubed import cubesat
-from lib.state_machine import state_machine
+from pycubed import cubesat
+from state_machine import state_machine
 
 # 3 uint8 + 1 uint16 + 11 float32
 # = 49 bytes of data

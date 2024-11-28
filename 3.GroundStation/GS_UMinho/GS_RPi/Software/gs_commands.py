@@ -117,6 +117,21 @@ async def request_beacon(radio, debug=False):
     else:
         return False, None
 
+async def request_image(radio, debug=False):
+    # Notice: response is never used
+    success, header, response = await send_command(
+        radio,
+        commands_by_name["REQUEST_IMAGE"]["bytes"],
+        "",
+        commands_by_name["REQUEST_IMAGE"]["will_respond"],
+        debug=debug)
+    if success and (header == headers.IMAGE_START or 
+                    header == headers.IMAGE_MID or
+                    header == headers.IMAGE_END
+                    ):
+        return True
+    else:
+        return False
 
 async def set_time(radio, unix_time=None, debug=False):
     """ Update the real time clock on the satellite using either a given value or the system time"""
@@ -165,9 +180,7 @@ async def receive(rfm9x, with_ack=True, debug=False):
     packet = await rfm9x.receive(with_ack=with_ack, with_header=True, debug=debug)
     if packet is None:
         return None
-    print(packet[4])
-    print(packet)
-    return packet[0:5], packet[5:]
+    return packet[0:6], packet[6:]
 
 
 async def send_message(radio, msg, debug=False, packet_delay=0):
@@ -204,12 +217,14 @@ class _data:
         self.msg_last = bytes([])
         self.cmsg = bytes([])
         self.cmsg_last = bytes([])
+        self.current_time  = '' # Only used for images
 
 
 async def wait_for_message(radio, max_rx_fails=10, debug=False):
     data = _data()
 
     rx_fails = 0
+    # This while loop never goes over one iteration. Possibly irrelevant?
     while True:
         res = await receive(radio, debug=debug)
 
@@ -226,10 +241,10 @@ async def wait_for_message(radio, max_rx_fails=10, debug=False):
 
         header, payload = res
 
-        oh = header[4]
-        print(oh)
+        oh = header[5]
         if oh == headers.DEFAULT or oh == headers.BEACON:
             return oh, payload
+        
         elif oh == headers.MEMORY_BUFFERED_START or oh == headers.MEMORY_BUFFERED_MID or oh == headers.MEMORY_BUFFERED_END:
             handle_memory_buffered(oh, data, payload)
             if oh == headers.MEMORY_BUFFERED_END:
@@ -239,10 +254,12 @@ async def wait_for_message(radio, max_rx_fails=10, debug=False):
             handle_disk_buffered(oh, data, payload)
             if oh == headers.DISK_BUFFERED_END:
                 return headers.DISK_BUFFERED_START, data.cmsg
+            
         elif oh == headers.IMAGE_START or oh == headers.IMAGE_MID or oh == headers.IMAGE_END:
             handle_image(oh, data, payload)
             if oh == headers.IMAGE_END:
                 return headers.IMAGE_START, data.cmsg
+            
         else:
             print(f"Unrecognized header {oh}")
             return oh, payload
@@ -309,27 +326,28 @@ def handle_disk_buffered(header, data, response):
     if header == headers.DISK_BUFFERED_END:
         data.cmsg_last = bytes([])
 
-
-def handle_image(header, data, response):
+def handle_image(header, data, payload):
     if header == headers.IMAGE_START:
-        data.cmsg = response
-        data.cmsg_last = response
+        data.cmsg = payload
+        data.cmsg_last = payload
         try:
-            with open("image_test.jpeg", "wb") as fd:
-                fd.write(response)
+            # Time is in the format MM/DD/YY_HOUR:MIN:SEC
+            data.current_time = time.strftime('%x_%X', time.localtime())
+            with open(f'{data.current_time}_satellite_image.jpeg', 'wb') as fd:
+                fd.write(payload)
         except Exception as e:
-            print(f"failed to create file: {e}")
+            print(f'Failed to write image: {e}')
     else:
-        if response != data.cmsg_last:
-            data.cmsg += response
+        if payload != data.cmsg_last:
+            data.cmsg += payload
             try:
-                with open("image_test.jpeg", "ab") as fd:
-                    fd.write(response)
+                with open(f'{data.current_time}_satellite_image.jpeg', 'ab') as fd:
+                    fd.write(payload)
             except Exception as e:
-                print(f"failed to write to image: {e}")
+                print(f'Failed to write to image: {e}')
         else:
             print('Repeated payload')
-        data.cmsg_last = response
+        data.cmsg_last = payload
 
     if header == headers.IMAGE_END:
         data.cmsg_last = bytes([])
