@@ -87,6 +87,6 @@ def rpigs_spi_config():
     spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO)
 
     cs = digitalio.DigitalInOut(board.CE0)
-    reset = digitalio.DigitalInOut(board.PWM0)
+    reset = digitalio.DigitalInOut(board.D12) #PWM0
 
     return spi, cs, reset
