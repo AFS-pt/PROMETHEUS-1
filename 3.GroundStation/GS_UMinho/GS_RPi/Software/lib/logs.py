@@ -127,12 +127,21 @@ def unpack_beacon(bytes):
     mag = array([mag0, mag1, mag2])
     accel = array([accel0, accel1, accel2])
 
-    return beacon_tuple(state_byte, bool(flags & (0b1 << 2)), bool(flags & (0b1 << 1)),
-                        bool(flags & (0b1 << 0)), software_error,
-                        boot_count, vbatt, cpu_temp,
-                        imu_temp, gyro, mag,
-                        accel, rssi, fei)
-
+    return {"state_index": state_byte,
+            "datetime_valid_flag": bool(flags & (0b1 << 2)),
+            "contact_flag": bool(flags & (0b1 << 1)),
+            "burn_flag": bool(flags & (0b1 << 0)),
+            "software_error_count": software_error,
+            "boot_count": boot_count,
+            "battery_voltage": vbatt,
+            "cpu_temperature_C": cpu_temp,
+            "imu_temperature_C": imu_temp,
+            "gyro": gyro,
+            "mag": mag,
+            "accel": accel,
+            "RSSI_dB": rssi,
+            "FEI_Hz": fei,
+            }
 
 def unpack_system(bytes):
     (lux_xp, lux_yp, lux_zp,

@@ -331,8 +331,8 @@ def handle_image(header, data, payload):
         data.cmsg = payload
         data.cmsg_last = payload
         try:
-            # Time is in the format MM/DD/YY_HOUR:MIN:SEC
-            data.current_time = time.strftime('%x_%X', time.localtime())
+            # Time is in the format MM_DD_YY-HOUR_MIN_SEC
+            data.current_time = time.strftime("%Y_%m_%d-%H_%M_%S", time.localtime())
             with open(f'{data.current_time}_satellite_image.jpeg', 'wb') as fd:
                 fd.write(payload)
         except Exception as e:
