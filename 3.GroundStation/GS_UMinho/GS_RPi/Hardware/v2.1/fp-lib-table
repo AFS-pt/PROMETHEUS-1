@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name ".RPiGS")(type "KiCad")(uri "${KIPRJMOD}/Libraries/.RPiGS.pretty")(options "")(descr ""))
-)
